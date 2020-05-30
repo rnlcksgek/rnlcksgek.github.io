@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>background</title>
+    <style>
+        body{
+        background-color : rgba(186, 181, 171, 0.8);
+        margin : 0px;
+        }
+         #nav{
+        border : 1px solid black;
+        margin : 0;
+        list-style-type : none;
+        width : 1450px;
+        height : 100px;
+        background-color : rgba(111, 43, 42, 0.87);
+        }
+        #nav ul{
+        display : flex;
+        flex-direction : row;
+        justify-content : flex-end;
+        text-align : center;
+        font-size : 30px;
+        }
+        #nav ul li{
+        list-style-type : none;
+        color : black;
+        width : 170px;
+        height : 40px;
+        margin : 0 5px;
+        font-family : Brush Script MT;
+        background-color : rgba(255, 255, 255, 0.10);
+        border-radius : 32px;
+        }
+        #nav ul li a{
+        text-decoration:none;
+        color : rgba(155,154,154,0.74);
+        }
+        #context{
+        width : 1300px;
+        height : 750px;
+        margin : auto;
+        overflow : hidden;
+        }
+        #context #photo{
+        float : left;
+        width : 750px;
+        height : 750px;
+        }
+        #content #photo img{
+        }
+        #context #text{
+        float : left;
+        width : 550px;
+        height : 750px;
+        }
+        #context #text #info{
+        width : 420px;
+        height : 550px;
+        margin : 100px 60px 100px 60px;
+        text-align : right;
+        overflow : hidden;
+        }
+        #context #text #info .detail{
+        width : 390px;
+        height : 160px;
+        background-color : rgba(155,154,154,0.74);
+        margin : 10px 0px 10px 20px;
+        box-shadow : 5px 5px 5px black;
+        }
+        #context #text #info .detail .question{
+        font-size: 30px;
+        text-align : left;
+        text-decoration : underline;
+        margin :10px 10px 10px 5px;
+        }
+
+        #context #text #info .detail .answer{
+        font-size: 20px;
+        text-align : justify;
+        margin :0;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id = "nav">
+        <ul>
+            <li><a href = './index.html'>Main</li>
+            <li><a href = './about_me.html'>About Me</a></li>
+            <li><a href = './favorite.html'>My Favorite</a></li>
+            <li><a href = './contact.html'>Contact</a></li>
+        </ul>
+    </div>
+    <div id = "context">
+        <div id = "photo">
+            <img src = './night.jpg' width ='750px' height = '750px'>
+        </div>
+        <div id = "text">
+            <div id = "info">
+                <div class = "detail">
+                    <p class = "question"><br>소개</p>
+                    <p class = "answer">저는 한국외국어대학교 경영학과에 재학 중인<br>이정엽입니다.</p>
+                </div>
+                <div class = "detail">
+                    <p class = "question"><br>지원동기</p>
+                    <p class = "answer">다양한 사람들을 만나고 한 단계 발전할 좋은<br>기회인 거 같아서 지원하게 되었습니다.</p>
+                </div>
+                <div class = "detail">
+                    <p class = "question"><br>앞으로의 계획</p>
+                    <p class = "answer">명확한 계획은 없지만, 앞으로 있을 기회를 잡기<br>위해 준비하고 있습니다.</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>

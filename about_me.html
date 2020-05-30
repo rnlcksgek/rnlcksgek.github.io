@@ -49,25 +49,29 @@
         width : 750px;
         height : 750px;
         }
-        #content #photo img{
-        }
+
         #context #text{
         float : left;
-        width : 550px;
+        width : 545px;
         height : 750px;
         }
+        #context #text #About_Me{
+        font-size : 50px;
+        margin: 40px 0 0 20px;
+        font-family :Brush Script MT;
+        }
         #context #text #info{
-        width : 420px;
+        width : 500px;
         height : 550px;
-        margin : 100px 60px 100px 60px;
+        margin :45px 60px 100px 80px;
         text-align : right;
         overflow : hidden;
         }
         #context #text #info .detail{
-        width : 390px;
+        width : 440px;
         height : 160px;
         background-color : rgba(155,154,154,0.74);
-        margin : 10px 0px 10px 20px;
+        margin : 10px 0px 10px 13px;
         box-shadow : 5px 5px 5px black;
         }
         #context #text #info .detail .question{
@@ -78,11 +82,90 @@
         }
 
         #context #text #info .detail .answer{
-        font-size: 20px;
+        font-size: 18px;
         text-align : justify;
         margin :0;
         }
 
+         @media (max-width:800px){
+            #nav{
+            border : 1px solid black;
+            margin : 0;
+            list-style-type : none;
+            width : 100vw;
+            height : 10%;
+            background-color : rgba(111, 43, 42, 0.87);
+            }
+            #nav ul{
+            text-align : center;
+            font-size : 4vw;
+            margin : 2vw 3vw;
+            padding : 0;
+            }
+            #nav ul li{
+            display : inline-block;
+            list-style-type : none;
+            color : black;
+            width : 25vw;
+            height : 5vh;
+            margin : 0 1vw;
+            padding : 1.5vw 0 0 0;
+            font-family : Brush Script MT;
+            background-color : rgba(255, 255, 255, 0.10);
+            border-radius : 32px;
+            }
+            #nav ul li a{
+            text-decoration:none;
+            color : rgba(155,154,154,0.74);
+            }
+            #context{
+            width : 85vw;
+            height : 100vh;
+            margin : auto;
+            }
+            #context #photo{
+            margin : 10vh 0 3vh 0;
+            width : 85vw;
+            height : 40vh;
+            }
+            #context #text #About_Me{
+            width : 85vw;
+            height : 9vh;
+            font-size : 5vw;
+            position : absolute;
+            top : 15vw;
+            margin : 0;
+            }
+            #context #text{
+            width : 100vw;
+            height : 40vh;
+            }
+            #context #text #info{
+            width : 100%;
+            height : 100%;
+            margin : 0px;
+            }
+            #context #text #info .detail{
+            width : 84vw;
+            height : 11vh;
+            background-color : rgba(155,154,154,0.74);
+            margin : 1vh 0;
+            box-shadow : 5px 5px 5px black;
+            padding : 0;
+            }
+            #context #text #info .detail .question{
+            font-size: 3vw;
+            text-align : left;
+            text-decoration : underline;
+            margin : 0;
+            }
+
+            #context #text #info .detail .answer{
+            font-size: 2.2vw;
+            margin :0;
+            text-align : center;
+            }
+          }
 
 
 
@@ -100,21 +183,22 @@
     </div>
     <div id = "context">
         <div id = "photo">
-            <img src = './night.jpg' width ='750px' height = '750px'>
+            <img src = './night.jpg' width ='100%' height = '100%'>
         </div>
         <div id = "text">
+            <p id = "About_Me">About Me</p>
             <div id = "info">
                 <div class = "detail">
                     <p class = "question"><br>소개</p>
-                    <p class = "answer">저는 한국외국어대학교 경영학과에 재학 중인<br>이정엽입니다.</p>
+                    <p class = "answer">저는 한국외국어대학교 경영학과에 재학 중인 이정엽입니다.</p>
                 </div>
                 <div class = "detail">
                     <p class = "question"><br>지원동기</p>
-                    <p class = "answer">다양한 사람들을 만나고 한 단계 발전할 좋은<br>기회인 거 같아서 지원하게 되었습니다.</p>
+                    <p class = "answer">다양한 사람들을 만나고 한 단계 발전할 좋은 기회인 거 같아서 지원하게 되었습니다.</p>
                 </div>
                 <div class = "detail">
                     <p class = "question"><br>앞으로의 계획</p>
-                    <p class = "answer">명확한 계획은 없지만, 앞으로 있을 기회를 잡기<br>위해 준비하고 있습니다.</p>
+                    <p class = "answer">명확한 계획은 없지만, 앞으로 있을 기회를 잡기 위해 준비하고 있습니다.</p>
                 </div>
             </div>
 
